@@ -4,13 +4,13 @@ include:
   - board: nice_nano_v2
     shield: korne_dongle dongle_display
     snippet: common-config studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_BT_MAX_CONN=6 -DCONFIG_BT_MAX_PAIRED=6 -DCONFIG_ZMK_DISPLAY=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: korne_dongle
 
   - board: nice_nano_v2
     shield: corne_left nice_view_adapter nice_view
     snippet: common-config studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_BT_MAX_CONN=5 -DCONFIG_BT_MAX_PAIRED=5 -DCONFIG_ZMK_DISPLAY=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_DISPLAY=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
     artifact-name: korne_central_left
 
   - board: nice_nano_v2
