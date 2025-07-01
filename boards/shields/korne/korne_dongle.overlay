@@ -1,6 +1,6 @@
-# Reference:
-# - https://github.com/englmaxi/zmk-config/blob/main/boards/shields/cosmo/cosmo_dongle.overlay
-# - https://github.com/tokyo2006/zmk-corne-dongle/blob/main/config/boards/shields/eyeslash_corne/eyeslash_corne_central_dongle.overlay
+// Reference:
+// - https://github.com/englmaxi/zmk-config/blob/main/boards/shields/cosmo/cosmo_dongle.overlay
+// - https://github.com/tokyo2006/zmk-corne-dongle/blob/main/config/boards/shields/eyeslash_corne/eyeslash_corne_central_dongle.overlay
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <layouts/foostan/corne/6column.dtsi>
@@ -19,9 +19,9 @@
         events = <0>;
     };
 
-# The doc says I have to copy files. I'd be better if the transform were moved from app/board/shields to app/dts/transforms (like app/dts/layouts) so it could be included.
-# See: https://zmk.dev/docs/development/hardware-integration/dongle?layout-locations=imported#matrix-transform
-# Source: https://github.com/zmkfirmware/zmk/blob/6b44d33db2f4bad7d98e475e6f7968493b05af73/app/boards/shields/corne/corne.dtsi#L27C1-L41C7
+// The doc says I have to copy files. I'd be better if the transform were moved from app/board/shields to app/dts/transforms (like app/dts/layouts) so it could be included.
+// See: https://zmk.dev/docs/development/hardware-integration/dongle?layout-locations=imported#matrix-transform
+// Source: https://github.com/zmkfirmware/zmk/blob/6b44d33db2f4bad7d98e475e6f7968493b05af73/app/boards/shields/corne/corne.dtsi#L27C1-L41C7
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
@@ -46,9 +46,9 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
     transform = <&default_transform>;
 };
 
-#
-# https://github.com/tokyo2006/zmk-corne-dongle/blob/fdd4cc2db357146fefd0f602940c2b8a32083fbf/config/boards/shields/eyeslash_corne/eyeslash_corne_central_dongle.overlay#L23C1-L23C11
-#
+//
+// https://github.com/tokyo2006/zmk-corne-dongle/blob/fdd4cc2db357146fefd0f602940c2b8a32083fbf/config/boards/shields/eyeslash_corne/eyeslash_corne_central_dongle.overlay#L23C1-L23C11
+//
 
 &pinctrl {
     i2c0_default: i2c0_default {
